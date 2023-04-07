@@ -10,4 +10,10 @@ In order to use the Exit function from the os package, you would need to import 
 For example:  
 import "os"  
 os.Exit()  
-6. Modify the program we wrote so that instead of printing "Hello, World" it prints "Hello,my name is" followed by your name.  
+5. Modify the program we wrote so that instead of printing "Hello, World" it prints "Hello,my name is" followed by your name.  
+The following is the answer.  
+package main
+import "fmt"  
+func main() {  
+  fmt.Println("Hello,my name is benny.")
+}
