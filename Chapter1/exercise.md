@@ -12,8 +12,10 @@ import "os"
 os.Exit()  
 5. Modify the program we wrote so that instead of printing "Hello, World" it prints "Hello,my name is" followed by your name.  
 The following is the answer.  
+````golang
 package main  
 import "fmt"  
 func main() {  
     fmt.Println("Hello,my name is benny.")  
-}  
+}
+````
