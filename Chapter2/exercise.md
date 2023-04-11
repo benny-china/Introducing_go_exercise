@@ -13,5 +13,5 @@ func main() {
 ````
 5. What is a string? How do you find its length?  
 A string is a sequence of characters. You can find the length of a string using the len function.  
-7. What's the value of the expression (true && false) || (false && true) || !(false && false) ?
+7. What's the value of the expression (true && false) || (false && true) || !(false && false) ?  
 The value of the expression is true.
