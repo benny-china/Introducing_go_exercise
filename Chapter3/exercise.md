@@ -21,3 +21,16 @@ func main() {
 }
 ````
 6. Write another program that converts from feet into meters.  
+````golang
+package main
+import "fmt"
+
+func main() {
+    fmt.Print("Enter a number: ")
+    var input float64
+    fmt.Scanf("%f",&input)
+
+    meters := input*0.3048
+    fmt.Printf("meters=%.2f\n",meters)
+}
+````
