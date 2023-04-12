@@ -7,4 +7,17 @@ Scope is the range of places a variable can be used.Scope in Go is determined le
 4. What is the difference between var and const?  
 Unlike a variable, the value of a constant is determined at compile time and can not change throughout the lifetime of a program.  
 5. Using the example program as a starting point, write a program that converts from Fahrenheit into Celsius.  
+````golang
+package main
+import "fmt"
+
+func main() {
+    fmt.Print("Enter a number: ")
+    var input float64
+    fmt.Scanf("%f",&input)
+
+    cel:=(input-32)*5/9
+    fmt.Printf("Celsius=%.2f\n",cel)
+}
+````
 6. Write another program that converts from feet into meters.  
