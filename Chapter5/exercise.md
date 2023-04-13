@@ -4,4 +4,12 @@
 ````golang
 x := [6]string{"a","b","c","d","e","f"}
 ````
-
+4. Write a program that finds the smallest number int this list:
+````golang
+x := []int{
+    48,96,86,68,
+    57,82,63,70,
+    37,34,83,27,
+    19,97, 9,17,
+}
+````
