@@ -1,8 +1,9 @@
 1. sum is a function that takes a slice of numbers and adds them together. What would its function signature look like in GO?
 
-2. Write a function that takes an integer and halves it and returns true if it was even or false if it was odd. For example, half(1) should reutrn (0,false) and half(2) should return (1,true).  
-4. Write a function with one variadic parameter that finds the greatest number in a list of numbers.  
-5. Using makeEvenGenerator as an example, write a makeOddGenerator function that generates odd numbers.  
+2. Write a function that takes an integer and halves it and returns true if it was even or false if it was odd. For example, half(1) should reutrn (0,false) and half(2) should return (1,true).
+
+3. Write a function with one variadic parameter that finds the greatest number in a list of numbers.  
+4. Using makeEvenGenerator as an example, write a makeOddGenerator function that generates odd numbers.  
 6. The Fibonacci sequence is defined as: fib(0)=0,fib(1)=1,fib(n)=fib(n-1)+fib(n-2).Write a recursive function that can find fib(n).  
 7. What are defer,panic, and recover? How do you recover from a runtime panic?  
 8. How do you get the memory address of a variable?  
