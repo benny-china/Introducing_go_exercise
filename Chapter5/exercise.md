@@ -6,7 +6,7 @@ The length of the slice is 3.
 ````golang
 x := [6]string{"a","b","c","d","e","f"}
 ````
-The array would give you [c,d,e]  
+The array would give you [c,d,e].  
 4. Write a program that finds the smallest number int this list:
 ````golang
 x := []int{
