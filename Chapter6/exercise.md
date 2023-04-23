@@ -32,9 +32,31 @@ func max_num(args... int) int {
     return max
 }
 ````
-5. Using makeEvenGenerator as an example, write a makeOddGenerator function that generates odd numbers.  
-6. The Fibonacci sequence is defined as: fib(0)=0,fib(1)=1,fib(n)=fib(n-1)+fib(n-2).Write a recursive function that can find fib(n).  
-7. What are defer,panic, and recover? How do you recover from a runtime panic?  
+4. Using makeEvenGenerator as an example, write a makeOddGenerator function that generates odd numbers.  
+````golang
+package main
+import "fmt"
+
+func makeOddGenerator() func() uint {
+    i := uint(1)
+    return func() (ret uint) {
+        ret = i
+        i += 2
+        return
+    }
+}
+
+func main() {
+    nextOdd := makeOddGenerator()
+    fmt.Println(nextOdd())
+    fmt.Println(nextOdd())
+    fmt.Println(nextOdd())
+    fmt.Println(nextOdd())
+}
+````  
+
+5. The Fibonacci sequence is defined as: fib(0)=0,fib(1)=1,fib(n)=fib(n-1)+fib(n-2).Write a recursive function that can find fib(n).  
+6. What are defer,panic, and recover? How do you recover from a runtime panic?  
 8. How do you get the memory address of a variable?  
 9. How do you assign a value to a pointer?
 10. How do you create a new pointer?  
