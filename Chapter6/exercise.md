@@ -11,10 +11,28 @@ func main() {
 func half(num int) (int,bool) {
     return num/2, num%2==0
 }
-````
-
+````  
 3. Write a function with one variadic parameter that finds the greatest number in a list of numbers.  
-4. Using makeEvenGenerator as an example, write a makeOddGenerator function that generates odd numbers.  
+````golang
+package main
+import "fmt"
+
+func main() {
+    max := max_num(1,2,4,4,23,2,36,15)
+    fmt.Println(max)
+}
+
+func max_num(args... int) int {
+    max:=0
+    for k,v:=range args {
+        if k==0 || v>max {
+            max = v
+        }
+    }
+    return max
+}
+````
+5. Using makeEvenGenerator as an example, write a makeOddGenerator function that generates odd numbers.  
 6. The Fibonacci sequence is defined as: fib(0)=0,fib(1)=1,fib(n)=fib(n-1)+fib(n-2).Write a recursive function that can find fib(n).  
 7. What are defer,panic, and recover? How do you recover from a runtime panic?  
 8. How do you get the memory address of a variable?  
