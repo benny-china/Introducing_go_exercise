@@ -56,6 +56,21 @@ func main() {
 ````  
 
 5. The Fibonacci sequence is defined as: fib(0)=0,fib(1)=1,fib(n)=fib(n-1)+fib(n-2).Write a recursive function that can find fib(n).  
+````golang
+package main
+import "fmt"
+func fib(n int) int{
+    if n==0 || n==1 {
+        return n
+    }
+    return fib(n-1)+fib(n-2)
+}
+
+func main() {
+    res := fib(9)
+    fmt.Println(res)
+}
+````
 6. What are defer,panic, and recover? How do you recover from a runtime panic?  
 8. How do you get the memory address of a variable?  
 9. How do you assign a value to a pointer?
