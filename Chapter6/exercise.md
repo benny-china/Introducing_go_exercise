@@ -85,7 +85,8 @@ func main() {
 }
 ````
 7. How do you get the memory address of a variable?  
-9. How do you assign a value to a pointer?
+To get the memory address of a variable, use the & operator : x := &y  
+8. How do you assign a value to a pointer?
 10. How do you create a new pointer?  
 11. What is the value of x after running this program:
 ````golang
