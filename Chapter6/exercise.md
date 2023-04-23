@@ -72,7 +72,19 @@ func main() {
 }
 ````
 6. What are defer,panic, and recover? How do you recover from a runtime panic?  
-8. How do you get the memory address of a variable?  
+Defer defers a function to the moment before the surrounding function returns. Panic causes the function to immediately terminate along with any calling function and ultimately, the program itself. Recover is a way to prevent panics from going any further up the stack of functions. You can recover from a panic by deferring a call to a function which then calls the builtin recover function:  
+````golang
+package main
+import "fmt"
+func main() {
+    defer func() {
+        str:= recover()
+        fmt.Println(str)    
+    }()
+    panic("PANIC")
+}
+````
+7. How do you get the memory address of a variable?  
 9. How do you assign a value to a pointer?
 10. How do you create a new pointer?  
 11. What is the value of x after running this program:
