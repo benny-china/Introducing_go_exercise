@@ -102,3 +102,18 @@ func main() {
 ````
 The value of x is 2.25  
 11. Write a program that can swap two integers (x:=1; y:=2; swap(&x,&y) should give you x=2 and y=1).  
+````golang
+package main
+import "fmt"
+
+func swap(x,y *int) {
+    *x,*y = *y,*x
+}
+
+func main() {
+    x:=1
+    y:=2
+    swap(&x, &y)
+    fmt.Printf("x=%d,y=%d\n",x,y)
+}
+````
