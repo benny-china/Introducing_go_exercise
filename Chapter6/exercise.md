@@ -100,4 +100,5 @@ func main() {
     square(&x)
 }
 ````
+The value of x is 2.25  
 11. Write a program that can swap two integers (x:=1; y:=2; swap(&x,&y) should give you x=2 and y=1).  
