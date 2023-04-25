@@ -88,8 +88,9 @@ func main() {
 To get the memory address of a variable, use the & operator: x := &y  
 8. How do you assign a value to a pointer?  
 To assign a value to a pointer, use the * operator: *x = 6  
-10. How do you create a new pointer?  
-11. What is the value of x after running this program:
+9. How do you create a new pointer?  
+To create a new pointer, use the new function: x:=new(int)  
+10. What is the value of x after running this program:
 ````golang
 func square(x *float64) {
     *x = *x * *x
