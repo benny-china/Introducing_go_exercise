@@ -28,3 +28,4 @@ func Min(xs []float64) float64 {
 }
 ``````
 5. How would you documnet the functions you created in #4?
+To document the functions created in #4, add comments before the functions. Those comments will show up as documention for the godoc tool.
